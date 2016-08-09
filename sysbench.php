@@ -22,7 +22,7 @@ $test_default_args=array(
 	'fileio'=>array("--file-test-mode"=>"seqrd",
             "--file-num"=>64, 
             "--file-block-size" => 16384 , 
-            "--file-total-size" => "16G",
+            "--file-total-size" => "1G",
             "--file-io-mode" => "sync", 
             "--file-extra-flags"=>"" ,
             "--file-fsync-freq" => 100,  
