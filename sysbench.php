@@ -18,9 +18,19 @@ $command=  $default_command;
 $test_default_args=array(
 	//'cpu'=> array("--cpu-max-prime"=>10000), 
 	'cpu'=> array("--cpu-max-prime"=>100), //test only
-	'fileio'=>array("--file-test-mode"=>"seqrd","--file-num"=>64, "--file-block-size" => 16384 , "--file-total-size" => "16G",
-	"--file-io-mode" => "sync", "--file-extra-flags"=>"" ,"--file-fsync-freq" => 100,  "--file-fsync-all"=>"off",
-        "--file-fsync-end" => "on", "--file-fsync-mode"=>"fsync", "--file-merged-requests" => 0,  "--file-rw-ratio"=>1.5) ,
+
+	'fileio'=>array("--file-test-mode"=>"seqrd",
+            "--file-num"=>64, 
+            "--file-block-size" => 16384 , 
+            "--file-total-size" => "16G",
+            "--file-io-mode" => "sync", 
+            "--file-extra-flags"=>"" ,
+            "--file-fsync-freq" => 100,  
+            "--file-fsync-all"=>"off",
+            "--file-fsync-end" => "on", 
+            "--file-fsync-mode"=>"fsync", 
+            "--file-merged-requests" => 0,  
+            "--file-rw-ratio"=>1.5) ,
 	'memory'=> array("--memory-block-size" => "1k", "--memory-total-size" => "100G", "--memory-scope"=>"global", "--memory-hugetlb"=>"off", "--memory-oper"=>"write", "--memory-access-mode"=>"seq"), 
         'threads' => array('--thread-yields' => 1000, '--thread-locks'=>8 ),
         'mutex' => array('--mutex-num' => 4096, '--mutex-locks'=> 50000, '--mutex-loops' => 10000 ),

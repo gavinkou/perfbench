@@ -4,6 +4,7 @@ performance benchmark utility, try to make it easy and simply to test performanc
 this project provide a user friendly performance benchmark tool set, includeing
 
 1. pre-compiled V0.5 sysbench, refer https://github.com/akopytov/sysbench 
+    ./configure --without-mysql --enable-static
 2. a php wrapper to provide
   1. well parsed test result output
   2. easy to prepare/cleanup/run
